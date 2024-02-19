@@ -10,7 +10,7 @@ const p = document.createElement("p");
 divP.appendChild(p);
 document.body.appendChild(divP);
 
-//* 1.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.
+//? 1.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.
 const divLoop = document.createElement("div");
 
 for (let i = 0; i < 6; i++) {
@@ -19,17 +19,17 @@ for (let i = 0; i < 6; i++) {
 }
 document.body.appendChild(divLoop);
 
-//*  1.4 Inserta dinamicamente con javascript en un html una p con el texto 'Soy dinámico!'.
+//?  1.4 Inserta dinamicamente con javascript en un html una p con el texto 'Soy dinámico!'.
 const pDinamico = document.createElement ("p");
 pDinamico.textContent = "Soy Dinamico";
 
 document.body.appendChild(pDinamico);
 
-//*  1.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
+//?  1.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
 const h2 = document.querySelector(".fn-insert-here");
 h2.textContent = 'Wubba Lubba dub dub';
 
-//*  1.6 Basandote en el siguiente array crea una lista ul > li con los textos del array.
+//?  1.6 Basandote en el siguiente array crea una lista ul > li con los textos del array.
 const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 
 const ul = document.createElement("ul");
@@ -39,7 +39,8 @@ for (const app of apps) {
 	ul.appendChild(li);
 	}
 document.body.appendChild(ul);
-//* 1.7 Elimina todos los nodos que tengan la clase .fn-remove-me
+
+//? 1.7 Elimina todos los nodos que tengan la clase .fn-remove-me
 const eliminados = document.querySelectorAll(".fn-remove-me");
 for (const eliminado of eliminados) {
 	eliminado.remove();
