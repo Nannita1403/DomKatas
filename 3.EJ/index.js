@@ -17,6 +17,7 @@ for (const eliminado of eliminados) {
 
 //? 1.3 Utiliza el array para crear dinamicamente una lista ul > li de elementos en el div de html con el atributo data-function="printHere".
 const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota corola'];
+//! opcion1
 
 const ulCars = document.createElement("ul");
 for (const car of cars) {
@@ -27,6 +28,16 @@ for (const car of cars) {
 	}
 document.body.appendChild(ulCars);
 
+//! opcion2
+const div = document.querySelector("[data-function='printHere']")
+const ulCars2 = document.createElement("ul");
+for (const car of cars) {
+	const li = document.createElement("li");
+	li.textContent = car;
+	 
+	ulCars2.appendChild(li);
+	}
+div.appendChild(ulCars2);
 //? 1.4 Crea dinamicamente en el html una serie de divs que contenga un elemento h4 para el titulo y otro elemento img para la imagen.
 const countries2 = [
 	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1'}, 
